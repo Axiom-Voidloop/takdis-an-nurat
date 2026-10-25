@@ -12,8 +12,6 @@ Maybe you have regretted the years that slipped by, promising yourself you would
 
 Now the time has come. Let this app help you keep track, so that no worldly distraction can steer you away from your commitment. You did not give up in front of Allah, and you promised to earn His pleasure. Let this small work of your brother be a reminder that with every prostration, abundant reward and peace are waiting for you in the afterlife.
 
-*This message is shown once, the first time the app is opened.*
-
 ---
 
 ## What it does
