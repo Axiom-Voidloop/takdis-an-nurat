@@ -2,8 +2,6 @@
 
 A free, open-source, fully offline Android app that helps you work out how many prayers you owe and keep track of making them up, one prayer at a time.
 
-> **Status:** planning stage. This README describes what the app is meant to be. Nothing here is built yet.
-
 ---
 
 ## A word before you begin
