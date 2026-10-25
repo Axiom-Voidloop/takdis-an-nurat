@@ -2,6 +2,8 @@
 
 A free, open-source, fully offline Android app that helps you work out how many prayers you owe and keep track of making them up, one prayer at a time.
 
+> **Status:** early development. The calculator engine is written and tested. The app screens, storage, app lock, widget and reminders are not built yet. This README describes what the app is meant to be.
+
 ---
 
 ## A word before you begin
@@ -12,12 +14,14 @@ Maybe you have regretted the years that slipped by, promising yourself you would
 
 Now the time has come. Let this app help you keep track, so that no worldly distraction can steer you away from your commitment. You did not give up in front of Allah, and you promised to earn His pleasure. Let this small work of your brother be a reminder that with every prostration, abundant reward and peace are waiting for you in the afterlife.
 
+*This message is shown once, the first time the app is opened.*
+
 ---
 
 ## What it does
 
 1. **Calculates** how many days of prayers are owed, using two dates:
-   - the date puberty began (year required, month optional), and
+   - the date you started missing prayers (year required, month optional), and
    - the date you plan to start praying regularly.
 2. **Shows the total** for each prayer (Fajr, Zuhr, Asr, Maghrib, Isha, and optionally Witr), either in **days** or in **rakats**. Leap years are handled automatically.
 3. **Tracks your progress.** Tap beside a prayer each time you make one up. Mistakes can be undone.
