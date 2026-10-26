@@ -157,7 +157,7 @@ Plain, human-readable JSON. One file. The PIN and any lock data are **never** ex
   ],
   "summary": {
     "note": "Informational only. Ignored on import.",
-    "daysOwed": 2594
+    "daysOwed": 2645
   }
 }
 ```
@@ -172,6 +172,12 @@ For male users, `haid` and `lifeEvents` are `null` or empty.
 - `weeksAlong` is `"under-4"`, `"4-12"` or `"12-20"`.
 - `confirmedBy` is `missed_period`, `test`, `ultrasound` or `test_and_ultrasound`.
 - `bleedingTreatedAs` is `nifas`, `haid` or `unasked`.
+- `periodReturned` is an object with `year` and `month` (the period came back that month), the text `"not_yet"`, or `null` (not sure).
+- `nifasDays` is a whole number from 0 to 60. `bleedingDays` is a whole number from 1 to 60, or `null`.
+- `haid.daysPerMonth` is a whole number from 1 to 15 in the file. The school's allowed range is applied when calculating.
+- `reminder.everyMinutes` is a whole number from 15 to 10080.
+- `settings`, `events` and every field inside `settings` may be left out. The defaults are used.
+- A prayer event has an `id` (unique, up to 100 characters), a `count` that is not zero (positive unless `kind` is `adjustment`), and a date.
 - `reason` is `breastfeeding`, `medical`, `illness_stress`, `other` or `not_sure`.
 - Dates use `YYYY-MM-DD`. Month-only values are `{ "year": Y, "month": M }`.
 - `summary` is a convenience for people reading the file. The app recalculates everything from `setup` and `events`.
@@ -179,7 +185,9 @@ For male users, `haid` and `lifeEvents` are `null` or empty.
 **Import rules**
 - Reject files with a missing or higher `schemaVersion`, with a clear message.
 - Validate every field (known names, valid dates, whole-number counts, allowed ranges) and refuse the whole file if anything is invalid.
-- Offer "Replace everything" or "Merge" (merge skips prayer events whose `id` already exists).
+- Offer "Replace everything" or "Merge". Merge keeps the current setup and settings and adds only the prayer events whose `id` is not already there. It reports how many were added and how many were skipped.
+- Limits: the file must be under 20 million characters, with at most 200,000 prayer events and 500 life events, and nesting no deeper than 32 levels.
+- Lone surrogate characters in text are refused. Numbers too big to be whole numbers are refused as counts.
 - Ask the user to confirm before replacing anything.
 
 **Privacy note for the export screen**
