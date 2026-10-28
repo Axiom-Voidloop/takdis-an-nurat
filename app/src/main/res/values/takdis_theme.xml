@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Takdis an-Nurat theme. The colors come from takdis_colors.xml, which has a white
+        version (values) and a black version (values-night).
+        Text uses Cooper Hewitt. Card titles use Bebas Neue, set on each title in the layout.
+    -->
+    <style name="Theme.Takdis" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/takdis_background</item>
+        <item name="android:fontFamily">@font/cooper_hewitt</item>
+        <item name="android:textColorPrimary">@color/takdis_text</item>
+        <item name="android:textColorSecondary">@color/takdis_text_muted</item>
+        <item name="colorPrimary">@color/takdis_text</item>
+        <item name="colorOnPrimary">@color/takdis_background</item>
+        <item name="colorSecondary">@color/takdis_text</item>
+        <item name="colorOnSecondary">@color/takdis_background</item>
+        <item name="colorSurface">@color/takdis_background</item>
+        <item name="colorOnSurface">@color/takdis_text</item>
+        <item name="android:colorBackground">@color/takdis_background</item>
+    </style>
+</resources>

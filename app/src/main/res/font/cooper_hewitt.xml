@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Cooper Hewitt for all text. The Medium weight is used for normal text so the letters look firm.
+    The same file is listed for the bold weight, so Android never draws a fake bold on top.
+-->
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:font="@font/cooper_hewitt_medium"
+        android:fontStyle="normal"
+        android:fontWeight="400" />
+    <font
+        android:font="@font/cooper_hewitt_medium"
+        android:fontStyle="normal"
+        android:fontWeight="700" />
+</font-family>

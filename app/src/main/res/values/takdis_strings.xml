@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_app_name">Takdis an-Nurat</string>
+    <string name="welcome_tagline">Qada prayer calculator and tracker</string>
+    <string name="welcome_title">It’s the thought that counts.</string>
+    <string name="welcome_p1">Maybe you have regretted the years that slipped by, promising yourself you would start tomorrow, and tomorrow never came. That regret grew heavy. But instead of losing hope, and instead of being led astray by Shaitan’s whispers, you decided to take accountability.</string>
+    <string name="welcome_p2">Now the time has come. Let this app help you keep track, so that no worldly distraction can steer you away from your commitment.</string>
+    <string name="welcome_p3">You did not give up in front of Allah, and you promised to earn His pleasure. Let this small work of your brother be a reminder that with every prostration, abundant reward and peace are waiting for you in the afterlife.</string>
+    <string name="welcome_begin">Begin</string>
+    <string name="welcome_next_step">Setup is the next step we are building.</string>
+</resources>

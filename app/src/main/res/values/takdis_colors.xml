@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Takdis an-Nurat: white theme. Only white, gray and black. -->
+<resources>
+    <color name="takdis_background">#FFFFFF</color>
+    <color name="takdis_text">#000000</color>
+    <color name="takdis_text_muted">#4D4D4D</color>
+    <color name="takdis_border">#8C8C8C</color>
+    <!-- Cards: light gray at the top, darker toward the bottom. -->
+    <color name="takdis_card_start">#F2F2F2</color>
+    <color name="takdis_card_end">#CCCCCC</color>
+    <color name="takdis_button_background">#000000</color>
+    <color name="takdis_button_text">#FFFFFF</color>
+</resources>
